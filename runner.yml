@@ -34,4 +34,4 @@
         - runner5
         - runner6
       register: out
-      ignore_errors: yes
+      # ignore_errors: yes
