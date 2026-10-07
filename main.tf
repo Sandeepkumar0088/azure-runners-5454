@@ -135,7 +135,7 @@ resource "null_resource" "runners" {
       "sudo dnf install -y podman python3-pip ansible-core",
       "sudo systemctl enable --now podman.socket",
       "ansible-galaxy collection install containers.podman",
-      "ansible-pull -i localhost, -U https://github.com/Sandeepkumar0088/azure-github-runner.git runner.yml -e TOKEN=${var.TOKEN}"
+      "ansible-pull -i localhost, -U https://github.com/Sandeepkumar0088/azure-runners-5454.git runner.yml -e TOKEN=${var.TOKEN}"
     ]
   }
 }
